@@ -53,6 +53,7 @@ void setupBalloons(FILE * in, int n) {
  */
 result_t solve(int n) {
   /* TODO */
+	
 
 	result_t result = { true, 42 }; /* 全ての風船を回収出来た，かかった距離は42 */
   // result_t result = {false, 3};/* 風船3個目は回収不能でした */
