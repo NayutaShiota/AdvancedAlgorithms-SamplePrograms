@@ -53,10 +53,27 @@ void setupBalloons(FILE * in, int n) {
  */
 result_t solve(int n) {
   /* TODO */
+	int dis[n][3];
+	int i,j;
+	int time=0;
+	for(i=0;i<n;i++){
+		for(j=0;j<3;j++){
+			dis[i][j]=0;
+				}
+	}
+	if(balloons[0].pos<=balloons[0].time){
+		dis[0][0]=balloons[0].pos;
+		if(n==1){
+			result_t result={true,dis[0][0]*2};
+			return result;
+		}
+	}else{
+		result_t result={false,1};
+		return result;
+	}
+	for(i=1;i<n;i++){
+		for(j=
 
-	result_t result = { true, 42 }; /* 全ての風船を回収出来た，かかった距離は42 */
-  // result_t result = {false, 3};/* 風船3個目は回収不能でした */
-	return result;
 }
 
 /*******
