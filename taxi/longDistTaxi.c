@@ -213,6 +213,7 @@ priorityQ_t Q;
 
 int solve(int n, int m, int cap) {
 	/* 初期化 */
+	
 	reset(&Q);
 	searchNode_t start = {0, 0};
 	enqueue(&Q, start);
